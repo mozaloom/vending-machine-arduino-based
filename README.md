@@ -2,19 +2,9 @@
 
 A compact, Arduino-powered vending machine prototype developed as an Embedded Systems project at Al‑Balqa' Applied University.
 
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Hardware Components](#hardware-components)
-- [Repository Structure](#repository-structure)
-- [Installation & Setup](#installation--setup)
-- [Usage](#usage)
-- [Documentation](#documentation)
-- [Project Timeline](#project-timeline)
-- [License](#license)
+<p align="center">
+  <img src="images/vm-5.jpeg" alt="Vending Machine Prototype" width="500"/>
+</p>
 
 ---
 
@@ -30,6 +20,35 @@ This repository contains all resources for a prototype vending machine, includin
 - **User Interface:** 4×4 keypad for item selection and a 16×2 I²C LCD for prompts and status.
 - **Product Dispensing:** Servo-driven mechanism for reliable item delivery.
 - **Custom Enclosure:** Combination of wood and 3D-printed parts for structure and mounts.
+
+---
+
+## Repository Structure
+
+```
+.
+├── LICENSE
+├── README.md
+├── circuit
+│   └── vending Machine Diagram.fzz
+├── code
+│   └── Vending_Machine_Final.ino
+├── images
+│   ├── vm-0.png
+│   ├── vm-1.jpg
+│   ├── vm-2.jpeg
+│   ├── vm-3.jpeg
+│   ├── vm-4.jpeg
+│   ├── vm-5.jpeg
+│   ├── vm-6.jpeg
+│   ├── vm-7.jpeg
+│   ├── vm-8.jpeg
+│   └── vm-9.jpeg
+├── presentation
+│   └── VM2.pptx
+└── videos
+    └── vm-0.mp4
+```
 
 ---
 
@@ -49,29 +68,6 @@ This repository contains all resources for a prototype vending machine, includin
 
 ---
 
-## Repository Structure
-
-```
-.
-├── LICENSE
-├── README.md
-├── VendingMachineDocumentation.pdf   ← Full project report
-├── circuit
-│   └── vending Machine Diagram.fzz   ← Fritzing circuit diagram
-├── code
-│   └── Vending_Machine_Final.ino    ← Arduino Mega firmware
-├── images
-│   ├── vm-0.png
-│   ├── vm-1.jpg
-│   └── prototype photos
-├── presentation
-│   └── VM2.pptx                     ← Final presentation slides
-└── videos
-    └── vm-0.mp4                     ← Demonstration video
-```
-
----
-
 ## Installation & Setup
 
 1. **Clone the repository**
@@ -81,8 +77,9 @@ This repository contains all resources for a prototype vending machine, includin
    ```
 
 2. **Assemble the hardware**
-   - Refer to `circuit/vending Machine Diagram.fzz` for wiring.
-   - Mount all sensors, servos, keypad, and LCD as shown in the documentation (pp. 8–12).
+   - Follow the Fritzing diagram in `circuit/vending Machine Diagram.fzz`.
+   - Mount sensors, servo motors, keypad, and LCD into the wooden frame.
+   - Wire all components to the Arduino Mega as shown in the documentation (pp. 8–12).
 
 3. **Upload the firmware**
    - Open `code/Vending_Machine_Final.ino` in the Arduino IDE.
@@ -109,12 +106,6 @@ This repository contains all resources for a prototype vending machine, includin
 
 ---
 
-## Documentation
-
-For detailed schematics, code explanations, and test results, see [VendingMachineDocumentation.pdf](VendingMachineDocumentation.pdf).
-
----
-
 ## Project Timeline
 
 - **Nov–Dec 2023:** Design, hardware integration, coin detection
@@ -125,4 +116,4 @@ For detailed schematics, code explanations, and test results, see [VendingMachin
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is released under the [MIT License](LICENSE).
